@@ -33,7 +33,7 @@ fun main() {
     ## Vectors and Matrices
     
     OPENRNDR makes extensive use of data types like `Vector2`, `Vector3`, `Vector4`,
-    `Matrix2x2`, `Matrix3x3`, `Matrix4x4` and `Matrix5x5` for creating and drawing 2D and 3D shapes
+    `Matrix22`, `Matrix33`, `Matrix44` and `Matrix55` for creating and drawing 2D and 3D shapes
     
     Such data structures are immutable in OPENRNDR.
     That means that the following would not work:
@@ -62,7 +62,7 @@ fun main() {
     The same idea applies to matrices. For example:
     
     ```kotlin
-    var m = Matrix4x4.IDENTITY // One of the existing Matrix4x4 "presets"
+    var m = Matrix44.IDENTITY // One of the existing Matrix4x4 "presets"
     m = m * 2.0 + 1.0 // Assign a new matrix with all components multiplied by 2.0 and incremented by 1.0
     ```
     
